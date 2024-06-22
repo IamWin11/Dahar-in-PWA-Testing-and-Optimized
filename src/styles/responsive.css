@@ -1,0 +1,128 @@
+@media (max-width: 1500px) {
+  header {
+    padding: 18px 8%;
+  }
+  header.sticky {
+    padding: 7px 8%;
+  }
+  section {
+    padding: 45px 8% 35px;
+  }
+  :root {
+    --h1--font: 4.6rem;
+    --h2--font: 2.8rem;
+    --p--font: 15px;
+  }
+  .home {
+    height: 100vh;
+  }
+}
+
+@media (max-width: 1050px) {
+  .about {
+    gap: 3rem;
+  }
+  #menu-icon {
+    display: block;
+  }
+  .section-detail {
+    padding: 45px 8% 35px;
+  }
+  .navbar {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    padding: 40px 60px;
+    top: 0;
+    bottom: 0;
+    left: 100%;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    background: #000;
+    transition: all 0.5 ease;
+  }
+  .navbar a {
+    color: #979797;
+    margin: 0px 0px 40px 0px;
+    font-size: 2.2rem;
+    font-weight: 400;
+    padding: 20px;
+    min-width: 44px;
+    min-height: 44px;
+    display: inline-block;
+  }
+  .navbar.open {
+    left: 0;
+  }
+  .restaurants {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin: 32px 0;
+    text-align: center;
+  }
+}
+
+@media (max-width: 900px) {
+  .about {
+    grid-template-columns: 1fr;
+  }
+  .restaurants {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    margin: 32px 0;
+    text-align: center;
+  }
+}
+
+@media (max-width: 600px) {
+  :root {
+    --h1--font: 3.5rem;
+    --h2--font: 2.1rem;
+  }
+  .home {
+    height: 85vh;
+  }
+  .restaurants {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
+    margin: 32px 0;
+    text-align: center;
+  }
+}
+
+@media (max-width: 450px) {
+  header {
+    padding: 12px 3%;
+    right: 20px;
+  }
+  header.sticky {
+    padding: 7px 3%;
+    right: 20px;
+  }
+  section {
+    padding: 60px 3% 50px;
+  }
+  .restaurants {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
+    margin: 32px 0;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  .home-text h1 {
+      font-size: 3em;
+      padding-left: 1rem;
+  }
+
+  .home-text h5, .home-text .btn {
+      font-size: 1em;
+  }
+  
+}
